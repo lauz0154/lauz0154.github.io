@@ -1,5 +1,4 @@
-@charset uft-8
- /*http://meyerweb.com/eric/tools/css/reset/ 
+/*http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -51,22 +50,47 @@ table {
 	display: table;
 	clear: both;
 }
-.site-header {
-
+header {
+	background: #7cc576;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
 }
 .logo {
-	width: ;
-	position: ;
+	float: left;
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
 }
-.nav-conatiner {
-
+.nav-container {
+	background: #6dcff6;
 }
 body{
 	background-image: url("../img/background.png");
 }
-.article-content
-.site-content
-.image-gallery
+.article-content {
+
+}
+.aside-content {
+	padding: 15px;
+	width: 40%;
+	box-sizing: border-box;
+}
+.image-gallery .img-slide {
+	width: 33%;
+	padding: 15px;
+	float: left;
+	box-sizing: border-box;
+}
+footer{
+	background: #7cc576;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
 .footer {
+
+}
+.footer-content {
 
 }
