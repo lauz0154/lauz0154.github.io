@@ -7,16 +7,17 @@
 		<meta name="description" content="This is a HTML document containing HTML tags">
 		<meta name="keywords" content="HTML, HTML5, Basic HTML, Forms">
 		<title>Assignment 4</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<!-- header start -->
 		<header class="site-header" id="site-header">
-			<div>
-				<img src="img/logo.png">
+			<div class="logo">
+				<img src="img/logo.png" alt="Image">
 			</div>
 			<h1>Title of Page</h1>
-			<nav>
-				<ul>
+			<nav class="nav-container">
+				<ul class="link-container">
 					<li>
 						<a href="home.html">Home</a>
 					</li>
@@ -34,34 +35,58 @@
 		</header>
 		<!-- header end -->
 		<!--main start -->
-		<main>
-			<article>
-				<section>
+		<main class="main-container" id="main">
+			<article class="article-content">
+				<section class="main-content">
 					<h2>Main Content Title</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor, felis a scelerisque elementum, massa metus gravida nulla, vel cursus tellus sapien eget nibh. Suspendisse vitae sem eu sapien blandit gravida. Morbi porttitor et ex sit amet accumsan. Donec nec congue erat. Nunc vitae congue justo, eu vehicula nunc. Cras finibus ex scelerisque blandit eleifend. Nunc quis gravida purus, non laoreet eros. Nunc molestie blandit nisl id cursus.</p>
 					<p>Nullam quis volutpat leo. Cras quis felis felis. Proin augue ligula, tempus a ex ut, commodo molestie nulla. Aliquam eleifend magna velit. Vestibulum posuere, mi non sagittis placerat, velit erat cursus mi, sit amet laoreet metus neque vitae felis. Sed et aliquam enim. Duis malesuada risus non tellus cursus luctus a vitae nulla. Etiam vel odio vitae nibh tempus ornare. Maecenas at dictum nibh. Praesent ut nunc augue.</p>
 				</section>
 			</article>
-			<article>
-				<section>
-					<h3>Secondary Content Title</h3>
+			<article class="container">
+				<h3>Secondary Content Title</h3>
+				<section class="image-gallery">
+					<figure>
+						<img src="img/lizard.jpg" alt="Image 1">
+						<figcaption>Image 1</figcaption>
+					</figure>
+					<figure>
+						<img src="img/pete.jpg" alt="Image 2">
+						<figcaption>Image 2</figcaption>
+					</figure>
+					<figure>
+						<img src="img/snake.jpg" alt="Image 3">
+						<figcaption>Image 3</figcaption>
+					</figure>
 				</section>
 			</article>
-			<aside>
-				<img src="">
-				<h3>Title of the Sidebar</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum tellus, rhoncus quis fermentum non, tincidunt vel turpis. Sed id nisl augue. Vivamus eleifend urna odio, at faucibus dui ultricies vitae. Quisque porttitor urna in nunc scelerisque, quis rhoncus mauris dignissim. Mauris interdum ex ex. Nulla ut sem et sem congue finibus.</p>
+			<!-- site sidebar start -->
+			<aside class="site-content">
+				<div class="sidebar-content">
+					<img src="img/gunther.jpg" alt="Image">
+					<h3>Title of the Sidebar</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum tellus, rhoncus quis fermentum non, tincidunt vel turpis. Sed id nisl augue. Vivamus eleifend urna odio, at faucibus dui ultricies vitae. Quisque porttitor urna in nunc scelerisque, quis rhoncus mauris dignissim. Mauris interdum ex ex. Nulla ut sem et sem congue finibus.</p>
+				</div>
 			</aside>
+			<!-- site sidebar end -->
 		</main>
 		<!-- main end -->
 		<!-- footer start -->
 		<footer class="footer" id="footer">
 			<p>Copyright 2017, All Rights Reserved</p>
-			<nav>
+			<nav class="footer-content">
 				<ul>
 					<li>
-						<img src="img/facebook.png">
+						<img src="img/facebook.png" alt="Image 1">
 						<a href="https://www.facebook.com/"></a>
+					</li>
+					<li>
+						<img src="img/youtube.png" alt="Image 2">
+						<a href="https://www.youtube.com/"></a>
+					</li>
+					<li>
+						<img src="img/twitter.png" alt="Image 3">
+						<a href="https://twitter.com/?lang=en-ca"></a>
 					</li>
 				</ul>
 			</nav>
