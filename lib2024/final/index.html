@@ -10,21 +10,196 @@
 	<body>
 		<!-- header starts -->
 		<header>
-			<div></div>
-			<nav></nav>
+			<div>
+				<h1>My Logo</h1>
+			</div>
+			<nav class="nav-container">
+				<ul class="link-container">
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="schedule.html">Schedule</a>
+					</li>
+					<li>
+						<a href="portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		<!-- header end -->
 		<!-- main start -->
 		<main>
-			<article></article>
-			<aside></aside>
+			<section>
+				<h2>About</h2>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan convallis laoreet. Nulla facilisi. Nam porta est nibh, nec rutrum dui consectetur et. Curabitur pellentesque eu sapien ut viverra. Proin eleifend lacinia orci sed tincidunt. Etiam tempus pellentesque ex, mattis gravida odio imperdiet eget. Pellentesque nisl tellus, auctor eu turpis et, tempor iaculis nunc. Maecenas auctor dictum dui, a pellentesque orci laoreet sit amet. Morbi malesuada vehicula orci non accumsan. Donec iaculis sodales sapien ac ultrices. Aliquam erat volutpat. Nullam in maximus lacus, id tincidunt felis. Quisque efficitur, purus eget placerat ornare, augue nisl ullamcorper risus, nec porttitor sapien sapien et diam. Pellentesque quis placerat erat, fermentum congue mi. Praesent lorem turpis, accumsan ut magna sit amet, blandit vehicula lectus.</p>
+					<p>Curabitur non sagittis nisl. Phasellus hendrerit, libero ac mattis semper, nibh dui lacinia turpis, eu convallis quam velit non arcu. Quisque malesuada dignissim tortor vel ultricies. Aliquam non luctus nibh. Suspendisse fringilla aliquet dolor, id vehicula ex mollis sit amet. Phasellus posuere finibus turpis, id venenatis nunc commodo eget. Morbi eu egestas leo. Vestibulum nec nulla mauris. Nulla nec leo dictum, commodo leo ut, tempus justo. Nam fermentum metus non dui pellentesque pulvinar. Nullam mattis lobortis tortor nec malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ut justo ex. Aliquam erat volutpat. Pellentesque eget ipsum in augue facilisis luctus. Suspendisse iaculis nunc molestie leo finibus, ut dapibus ante aliquet.</p>
+				</article>
+				<aside>
+					<img src="img/bakery.png" alt="bakery">
+				</aside>
+			</section>
+			<section>
+				<h2>Schedule</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>TIME</th>
+							<th>MONDAY</th>
+							<th>TUESDAY</th>
+							<th>WEDNESDAY</th>
+							<th>THURSDAY</th>
+							<th>FRIDAY</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>09:00-11:00</td>
+							<td>Communications I</td>
+							<td>Client Services</td>
+							<td>Special Collections</td>
+							<td>Directed Reasearch Seminar</td>
+							<td>Client Services</td>
+						</tr>
+						<tr>
+							<td>11:00-12:30</td>
+							<td>Reference</td>
+							<td>Internet App</td>
+							<td>Library Software</td>
+							<td>French</td>
+							<td>Reference</td>
+						</tr>
+						<tr>
+							<td>14:00-15:00</td>
+							<td>Acquisitions</td>
+							<td>General Elective</td>
+							<td>Marketing</td>
+							<td>Emerging Library Tech</td>
+							<td>Library Software</td>
+						</tr>
+						<tr>
+							<td>15:30-17:00</td>
+							<td>French</td>
+							<td>French</td>
+							<td>Acquisitions</td>
+							<td>Subject Analysis</td>
+							<td>Internet App</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section>
+				<article>
+					<h2>Edit Profile</h2>
+					<form action="somepage.php" method="get">
+						<div id="name-container" class="form-elm">
+							<label for="Name">Name:</label>
+							<input type="text" name="name" id="name" placeholder="Name goes here" required>
+						</div>
+						<div id="email-container" class="form-elm">
+							<label for="Email">Email:</label>
+							<input type="email" name="name" id="email" placeholder="Example@gmail.com" required>
+						</div>
+						<div id="address-container" class="form-elm">
+							<label for="Address">Address:</label>
+							<input type="text" name="address" id="address" placeholder="Address goes here" required>
+						</div>
+						<div id="city-container" class="form-elm">
+							<label for="City">City:</label>
+							<input type="text" name="city" id="city" placeholder="City goes here" required>
+						</div>
+						<div id="province-container" class="form-elm">
+							<label for="Province">Province</label>
+							<select id="province" name="province">
+								<optgroup label="Province">
+									<option value="AB">Alberta</option>
+									<option value="BC">British Columbia</option>
+									<option value="MB">Manitoba</option>
+									<option value="NL">Newfoundland and Labrador</option>
+									<option value="NB">New Brunswick</option>
+									<option value="NS">Nova Scotia</option>
+									<option value="ON">Ontario</option>
+									<option value="PEI">Prince Edward Island</option>
+									<option value="QC">Quebec</option>
+									<option value="SK">Saskatchewan</option>
+								</optgroup>
+								<optgroup label="Territory">
+									<option value="NT">Northwest Territories</option>
+									<option value="NU">Nunavut</option>
+									<option value="YT">Yukon</option>
+								</optgroup>
+							</select>
+						</div>
+						<div>
+							<label>Postal Code</label>
+							<input type="text" name="postal" id="postal" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="A0A 0A0" required>
+						</div>
+						<button type="submit">Submit</button>
+					</form>
+				</article>
+				<aside>
+					<h2>Edit Info</h2>
+				</aside>
+			</section>
 		</main>
 		<!-- main end -->
 		<!-- footer start -->
-		<footer>
-			<nav></nav>
-			<nav></nav>
-			<div></div>
+		<footer class="footer" id="footer">
+			<div class="footer-container">
+				<section class="col-footer quick links">
+					<h5>Quick Links</h5>
+					<nav>
+						<ul>
+							<li>
+								<a href="schedule.html">Schedule</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="portolio.html">Portfolio</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</section>
+				<section class="col-footer follow us">
+					<h5>Follow Us</h5>
+					<nav>
+						<ul>
+							<li>
+								<i class="fa-brands fa-facebook"></i>
+								<a href="https://www.facebook.com/"></a>
+							</li>
+							<li>
+								<i class="fa-brands fa-youtube"></i>
+								<a href="https://www.youtube.com/"></a>
+							</li>
+							<li>
+								<i class="fa-brands fa-twitter"></i>
+								<a href="https://twitter.com/?lang=en-ca"></a>
+							</li>
+						</ul>
+					</nav>
+				</section>
+				<section class="col-footer address">
+					<h5>Address</h5>
+					<address>
+						<p>1385 Woodroffe Ave.</p>
+						<p>Nepean, ON K2G 1V8</p>
+						<p>Canada</p>
+					</address>
+				</section>
+			</div>
 		</footer>
 		<!-- footer end -->
 	</body>

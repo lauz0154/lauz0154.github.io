@@ -50,47 +50,6 @@ table {
 	display: table;
 	clear: both;
 }
-header {
-	background: #7cc576;
-	padding: 15px;
-	width: 100%;
-	box-sizing: border-box;
-}
-.logo {
-	float: left;
-	width: 100%;
-	padding: 15px;
-	box-sizing: border-box;
-}
-.nav-container {
-	background: #6dcff6;
-}
 body{
 	background-image: url("../img/background.png");
-}
-.article-content {
-
-}
-.aside-content {
-	padding: 15px;
-	width: 40%;
-	box-sizing: border-box;
-}
-.image-gallery .img-slide {
-	width: 33%;
-	padding: 15px;
-	float: left;
-	box-sizing: border-box;
-}
-footer{
-	background: #7cc576;
-	padding: 15px;
-	width: 100%;
-	box-sizing: border-box;
-}
-.footer {
-
-}
-.footer-content {
-
 }
