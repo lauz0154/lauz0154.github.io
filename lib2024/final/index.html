@@ -6,11 +6,12 @@
 		<meta name="author" content="katrina lauzon-publicover">
 		<title>Final</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://kit.fontawesome.com/178cf5735b.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<!-- header starts -->
-		<header>
-			<div>
+		<header class="site-header" id="site-header">
+			<div class="logo">
 				<h1>My Logo</h1>
 			</div>
 			<nav class="nav-container">
@@ -35,18 +36,19 @@
 		</header>
 		<!-- header end -->
 		<!-- main start -->
-		<main>
-			<section>
+		<main class="main-container" id="main">
+			<section class="main-first" id="first">
 				<h2>About</h2>
 				<article>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan convallis laoreet. Nulla facilisi. Nam porta est nibh, nec rutrum dui consectetur et. Curabitur pellentesque eu sapien ut viverra. Proin eleifend lacinia orci sed tincidunt. Etiam tempus pellentesque ex, mattis gravida odio imperdiet eget. Pellentesque nisl tellus, auctor eu turpis et, tempor iaculis nunc. Maecenas auctor dictum dui, a pellentesque orci laoreet sit amet. Morbi malesuada vehicula orci non accumsan. Donec iaculis sodales sapien ac ultrices. Aliquam erat volutpat. Nullam in maximus lacus, id tincidunt felis. Quisque efficitur, purus eget placerat ornare, augue nisl ullamcorper risus, nec porttitor sapien sapien et diam. Pellentesque quis placerat erat, fermentum congue mi. Praesent lorem turpis, accumsan ut magna sit amet, blandit vehicula lectus.</p>
+					<br>
 					<p>Curabitur non sagittis nisl. Phasellus hendrerit, libero ac mattis semper, nibh dui lacinia turpis, eu convallis quam velit non arcu. Quisque malesuada dignissim tortor vel ultricies. Aliquam non luctus nibh. Suspendisse fringilla aliquet dolor, id vehicula ex mollis sit amet. Phasellus posuere finibus turpis, id venenatis nunc commodo eget. Morbi eu egestas leo. Vestibulum nec nulla mauris. Nulla nec leo dictum, commodo leo ut, tempus justo. Nam fermentum metus non dui pellentesque pulvinar. Nullam mattis lobortis tortor nec malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ut justo ex. Aliquam erat volutpat. Pellentesque eget ipsum in augue facilisis luctus. Suspendisse iaculis nunc molestie leo finibus, ut dapibus ante aliquet.</p>
 				</article>
-				<aside>
+				<aside class="aside-content">
 					<img src="img/bakery.png" alt="bakery">
 				</aside>
 			</section>
-			<section>
+			<section class="table-container" id="second">
 				<h2>Schedule</h2>
 				<table>
 					<thead>
@@ -95,28 +97,29 @@
 					</tbody>
 				</table>
 			</section>
-			<section>
+			<section class="main-third" id="third">
 				<article>
 					<h2>Edit Profile</h2>
+					<!-- Form starts here -->
 					<form action="somepage.php" method="get">
 						<div id="name-container" class="form-elm">
-							<label for="Name">Name:</label>
+							<label for="name">Name:</label>
 							<input type="text" name="name" id="name" placeholder="Name goes here" required>
 						</div>
 						<div id="email-container" class="form-elm">
-							<label for="Email">Email:</label>
+							<label for="email">Email:</label>
 							<input type="email" name="name" id="email" placeholder="Example@gmail.com" required>
 						</div>
 						<div id="address-container" class="form-elm">
-							<label for="Address">Address:</label>
+							<label for="address">Address:</label>
 							<input type="text" name="address" id="address" placeholder="Address goes here" required>
 						</div>
 						<div id="city-container" class="form-elm">
-							<label for="City">City:</label>
+							<label for="city">City:</label>
 							<input type="text" name="city" id="city" placeholder="City goes here" required>
 						</div>
 						<div id="province-container" class="form-elm">
-							<label for="Province">Province</label>
+							<label for="province">Province</label>
 							<select id="province" name="province">
 								<optgroup label="Province">
 									<option value="AB">Alberta</option>
@@ -143,9 +146,15 @@
 						</div>
 						<button type="submit">Submit</button>
 					</form>
+					<!-- From ends here-->
 				</article>
 				<aside>
-					<h2>Edit Info</h2>
+					<h2>Profile Info</h2>
+					<p>John Doe</p>
+					<p>JohnDoe@algonquincollege.com</p>
+					<p>1385 Woodroffe Ave. Nepean,</p>
+					<p>ON, K2G 1V8</p>
+					<i class="fa-solid fa-envelope"></i>
 				</aside>
 			</section>
 		</main>
@@ -177,15 +186,15 @@
 					<nav>
 						<ul>
 							<li>
-								<i class="fa-brands fa-facebook"></i>
+								<i class="fa-brands fa-facebook fa-xl"></i>
 								<a href="https://www.facebook.com/"></a>
 							</li>
 							<li>
-								<i class="fa-brands fa-youtube"></i>
+								<i class="fa-brands fa-youtube fa-xl"></i>
 								<a href="https://www.youtube.com/"></a>
 							</li>
 							<li>
-								<i class="fa-brands fa-twitter"></i>
+								<i class="fa-brands fa-twitter fa-xl"></i>
 								<a href="https://twitter.com/?lang=en-ca"></a>
 							</li>
 						</ul>

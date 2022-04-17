@@ -50,6 +50,12 @@ table {
 	display: table;
 	clear: both;
 }
-body{
+.nav-container {
+	background: #72a9ae;
+}
+body {
 	background-image: url("../img/background.png");
+}
+footer {
+	background: #454545;
 }
